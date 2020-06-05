@@ -74,33 +74,153 @@ var sounds ={
         src: ["Sounds/zig-zag.mp3"]
     }),
     24: new Howl({
-        src: ["Sounds/.mp3"]
-    }),
+        src: ["Sounds/B/corona.mp3"]
+    }), 
     25: new Howl({
-        src: ["Sounds/.mp3"]
-    }),
+        src: ["Sounds/B/clay.mp3"]
+    }), 
     26: new Howl({
-        src: ["Sounds/.mp3"]
+        src: ["Sounds/B/bubbles.mp3"]
     }),
     27: new Howl({
-        src: ["Sounds/.mp3"]
+        src: ["Sounds/B/confetti.mp3"]
     }),
     28: new Howl({
-        src: ["Sounds/.mp3"]
+        src: ["Sounds/B/flash-1.mp3"]
     }),
     29: new Howl({
-        src: ["Sounds/.mp3"]
+        src: ["Sounds/B/flash-2.mp3"]
     }),
     30: new Howl({
-        src: ["Sounds/.mp3"]
+        src: ["Sounds/B/flash-3.mp3"]
     }),
+    31: new Howl({
+        src: ["Sounds/B/glimmer.mp3"]
+    }),
+    32: new Howl({
+        src: ["Sounds/B/moon.mp3"]
+    }),
+    33: new Howl({
+        src: ["Sounds/B/pinwheel.mp3"]
+    }),
+    34: new Howl({
+        src: ["Sounds/B/piston-1.mp3"]
+    }),
+    35: new Howl({
+        src: ["Sounds/B/piston-2.mp3"]
+    }),
+    36: new Howl({
+        src: ["Sounds/B/prism-1.mp3"]
+    }),
+    37: new Howl({
+        src: ["Sounds/B/prism-2.mp3"]
+    }),
+    38: new Howl({
+        src: ["Sounds/B/splits.mp3"]
+    }),
+    39: new Howl({
+        src: ["Sounds/B/squiggle.mp3"]
+    }),
+    40: new Howl({
+        src: ["Sounds/B/strike.mp3"]
+    }),
+    41: new Howl({
+        src: ["Sounds/B/suspension.mp3"]
+    }),
+    42: new Howl({
+        src: ["Sounds/B/timer.mp3"]
+    }),
+    43: new Howl({
+        src: ["Sounds/B/ufo.mp3"]
+    }),
+    44: new Howl({
+        src: ["Sounds/B/veil.mp3"]
+    }),
+
+    45: new Howl({
+        src: ["Sounds/B/wipe.mp3"]
+    }),
+    46: new Howl({
+        src: ["Sounds/B/zig-zag.mp3"]
+    }),
+    47: new Howl({
+        src: ["Sounds/B/corona.mp3"]
+    }), 
+    48: new Howl({
+        src: ["Sounds/B/clay.mp3"]
+    }), 
+    49: new Howl({
+        src: ["Sounds/B/bubbles.mp3"]
+    }),
+    50: new Howl({
+        src: ["Sounds/B/confetti.mp3"]
+    }),
+    60: new Howl({
+        src: ["Sounds/B/flash-1.mp3"]
+    }),
+    61: new Howl({
+        src: ["Sounds/B/flash-2.mp3"]
+    }),
+    62: new Howl({
+        src: ["Sounds/B/flash-3.mp3"]
+    }),
+    63: new Howl({
+        src: ["Sounds/B/glimmer.mp3"]
+    }),
+    64: new Howl({
+        src: ["Sounds/B/moon.mp3"]
+    }),
+    65: new Howl({
+        src: ["Sounds/B/pinwheel.mp3"]
+    }),
+    66: new Howl({
+        src: ["Sounds/B/piston-1.mp3"]
+    }),
+    67: new Howl({
+        src: ["Sounds/B/piston-2.mp3"]
+    }),
+    68: new Howl({
+        src: ["Sounds/B/prism-1.mp3"]
+    }),
+    69: new Howl({
+        src: ["Sounds/B/prism-2.mp3"]
+    }),
+    70: new Howl({
+        src: ["Sounds/B/splits.mp3"]
+    }),
+    80: new Howl({
+        src: ["Sounds/B/squiggle.mp3"]
+    }),
+    81: new Howl({
+        src: ["Sounds/B/strike.mp3"]
+    }),
+    82: new Howl({
+        src: ["Sounds/B/suspension.mp3"]
+    }),
+    83: new Howl({
+        src: ["Sounds/B/timer.mp3"]
+    }),
+    84: new Howl({
+        src: ["Sounds/B/ufo.mp3"]
+    }),
+    85: new Howl({
+        src: ["Sounds/B/veil.mp3"]
+    }),
+
+    86: new Howl({
+        src: ["Sounds/B/wipe.mp3"]
+    }),
+    87: new Howl({
+        src: ["Sounds/B/zig-zag.mp3"]
+    }),
+
 
     
 }
 
 function onKeyDown(event){
     cap.style.display = "none";
-    x=  Math.floor(Math.random() * 24);
+    x=  Math.floor(Math.random() * 88);
     sounds[x].play();
     var point = Point.random() * (new Point(view.size.width, view.size.height));
     var newCircle= new Path.Circle(point, Math.ceil(Math.random() * 1000));
