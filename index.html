@@ -7,10 +7,19 @@
 <script type="text/javascript" src="paper-full.js"></script>
 <!-- Define inlined PaperScript associate it with myCanvas -->
 <script type="text/paperscript" src ="app.js" canvas="myCanvas"></script>
+
+
 </head>
 <body>
     <div>
         <p class= "intro">Press any key to turn on the magic!</p>
+        
+        <form class="text">
+            <input type="text" placeholder="Enter key...">
+            <button onclick="document.getElementsByClassName('text').value = ''">RESET</button>
+        </form>
+        
+        
         <canvas id="myCanvas" resize></canvas>
         
     </div>

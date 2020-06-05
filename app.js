@@ -246,9 +246,8 @@ function onFrame(event){
     }
 }
 
-function onKeyUp(event){
-    
-}
+
+
 
 
 
